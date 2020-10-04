@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+  font-family: cursive;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.shadow {
+  -webkit-box-shadow: -5px 5px 11px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -5px 5px 11px 0px rgba(0,0,0,0.75);
+  box-shadow: -5px 5px 11px 0px rgba(0,0,0,0.75);  
+}
+
+ul {
+  list-style-type: none;
+}
+
+input{
+  width: 23rem;
+  border-radius: 43px;
+  height: 3rem;
+  outline: none;
+  padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+video {
+  width: 90%;
+  height: 80vh;
+  background: black;
+  margin: 10rem 5% 0 5%;
+}
+
+.navigation{
+  width: 90%;
+  height: 5rem;
+  background: #ffffff;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  place-content: space-between;
+  margin-left: 5rem;
+  padding: 1%;
+  border-radius: 15px;
+  align-items: center;
+  font-size: larger;
+  margin-top: 1%;
+  top:0;
+
+  &__list {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    
+    &--link{
+      padding-left: 5rem;      
+      text-decoration: none;;
+    }
+  }
+}
+
+@import "./cover/cover";
+@import "./movie_list/movie_list";
+@import "./movies/movies"
