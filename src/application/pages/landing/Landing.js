@@ -9,6 +9,11 @@ function Landing() {
         const result = coverSlider.filter(el => el.id === id);
         setVideo(result);
     }
+
+    const onMouseEnter = (id) => {
+        const result = coverSlider.filter(el => el.id === id);
+        setVideo(result);
+    }
     return (
         <Fragment>
             <div className="cover">
@@ -33,6 +38,7 @@ function Landing() {
                     cover={list.cover}
                     video={list.video}                    
                     onClick={() => onClick(list.id)}
+                    onMouseEnter={() => onMouseEnter(list.id)}
                     />
                 ))}
             </div>                
